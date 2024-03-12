@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eHockey</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  *{
+    margin: 10px;
+  }
+
+  .re{
+    display: flex;
+  }
+  .re div{
+text-align: center;
+  }
+
+  @media screen and (max-width: 600px){
+    .re{
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">eHockey</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Get Ticket</a>
+            </div>
+          </div>
+
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main class="text-center">
+
+      <section>
+      <hr>
+      <h1>Professional Hockey Club</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quos quod nihil corrupti expedita facere quam possimus nulla quae. Sunt?</p>
+      <hr>
+      </section>
+      <section class="re" style="display: flex;justify-content: space-around;">
+        <div>
+          <div class="radial-progress bg-error" style="--value:87;" role="progressbar">87%</div>
+          <h1>Prayer Facility</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <div class="radial-progress bg-success" style="--value:95;" role="progressbar">95%</div>
+          <h1>Prayer Facility</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <div class="radial-progress bg-warning" style="--value:90;" role="progressbar">90%</div>
+          <h1>Prayer Facility</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <div class="radial-progress bg-info" style="--value:80;" role="progressbar">80%</div>
+          <h1>Prayer Facility</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </section>
+      <section>
+        <hr>
+        <h1>Program Sections</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem facere modi odio debitis laboriosam id! Illo deserunt quis corporis.</p>
+        <hr>
+      </section>
+
+      <section>
+        <hr>
+        <h1>Our New Products</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quos quod nihil corrupti expedita facere quam possimus nulla quae. Sunt?</p>
+        <hr>
+        </section>
+        <section class="re"  style="display: flex;justify-content: space-around;">
+          <div><img src="Images/5.png" alt="">
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+          <h1>Jursey For Hockey</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, corporis!</p></div>
+          <div>
+            <img src="Images/6.png" alt="">
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <h1>Logo For Hockey</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, fugiat!</p>
+          </div>
+          <div>
+            <img src="Images/7.png" alt="">
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <h1>Cap For Hockey</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, itaque!</p>
+          </div>
+          <div><img src="Images/8.png" alt="">
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+          <h1>Jursey For Junior</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, officia.</p></div>
+          <div>
+            <img src="Images/9.png" alt="">
+            
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <h1>Helmet For Hockey</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, odio.</p>
+          </div>
+          <div>
+
+            <img src="Images/10.png" alt="">
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <h1>Ball For Hockey</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, officia.</p>
+          </div>
+        </section>
+        <section>
+          <hr>
+          <h1>Clients Question</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quos quod nihil corrupti expedita facere quam possimus nulla quae. Sunt?</p>
+          <hr>
+          </section>
+
+          <section class="re" style="display: flex;justify-content: space-around;">
+            <div><img src="Images/11.png" alt=""></div>
+<div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium">
+                Our Equipment
+              </div>
+              <div class="collapse-content"> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quidem accusantium, totam corrupti sunt ducimus?</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+               Hockey Training
+              </div>
+              <div class="collapse-content"> 
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+              Private Lessons
+              </div>
+              <div class="collapse-content"> 
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+             Ski Touring
+              </div>
+              <div class="collapse-content"> 
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+             Booking
+              </div>
+              <div class="collapse-content"> 
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+         Pricing
+              </div>
+              <div class="collapse-content"> 
+                <p>hello</p>
+              </div>
+            </div>
+</div>
+          </section>
+          <section>
+            <hr>
+            <h1>Get In Touch</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quos quod nihil corrupti expedita facere quam possimus nulla quae. Sunt?</p>
+            <hr>
+            </section>
+
+            <section class="re" style="display: flex; justify-content: space-between;">
+              <div>
+                <div><img src="Images/Group 1171275317.png" alt="">
+                <p>Phone : (+62) 123-321-654</p></div>
+                <div>
+                  <img src="Images/Group 1171275318.png" alt="">
+                  <p>Email : bdhockey@support.com</p>
+                </div>
+                <div>
+                  <img src="Images/Group 1171275321.png" alt="">
+                  <p>
+                    Location : 152/1 Mohakhali Wireless Gate
+                  </p>
+                </div>
+              </div>
+              <div>
+<label class="input input-bordered flex items-center gap-2">
+  <input type="text" class="grow" placeholder="Search" />
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
+</label>
+<label class="input input-bordered flex items-center gap-2">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" /><path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" /></svg>
+  <input type="text" class="grow" placeholder="Email" />
+</label>
+<label class="input input-bordered flex items-center gap-2">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>
+  <input type="text" class="grow" placeholder="Username" />
+</label>
+<label class="input input-bordered flex items-center gap-2">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z" clip-rule="evenodd" /></svg>
+  <input type="password" class="grow" value="password" />
+</label>
+<button class="btn btn-wide btn-error" type="submit">Send Messages</button>
+              </div>
+            </section>
+    </main>
+    <footer   style="display: flex;justify-content: space-evenly; background-color: black; color: bisque;">
+      <div><h2>Get In Touch</h2>
+      <p>repellendus ea sint odit enim
+
+      </p>
+    <h3>bdhockey@support.com</h3>
+  <h3>(+62) 123-321-543</h3></div>
+      <div>
+        <h2>Company</h2>
+        <h3>About us</h3>
+        <h3>Leadership</h3>
+        <h3>Carrers</h3>
+        <h3>News & Article</h3>
+      </div>
+      <div>
+        <h2>Support</h2>
+        <h3>Help Center</h3>
+        <h3>FAQ</h3>
+        <h3>Ticket Support</h3>
+        <h3>Contact Us</h3>
+      </div>
+      <div>
+        <h2>Services</h2>
+        <h3>Academy</h3>
+        <h3>Group Lesson</h3>
+        <h3>Private Lesson</h3>
+        <h3>Hockeys for kids</h3>
+      </div>
+    </footer>
+    
+</body>
+</html>
